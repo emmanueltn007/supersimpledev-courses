@@ -1,8 +1,8 @@
 import axios from "axios";
 import dayjs from "dayjs";
 import { useState, useEffect, Fragment } from "react";
-import { Header } from "../components/Header";
-import { formatMoney } from "../utils/money";
+import { Header } from "../../components/Header";
+import { formatMoney } from "../../utils/money";
 import "./OrdersPage.css";
 
 export function OrdersPage({ cart }) {
@@ -39,7 +39,7 @@ export function OrdersPage({ cart }) {
                     </div>
                   </div>
 
-                  <div className="order-header-right-section">
+                  <div className="order-header-right-section">``
                     <div className="order-header-label">Order ID:</div>
                     <div>{order.id}</div>
                   </div>
