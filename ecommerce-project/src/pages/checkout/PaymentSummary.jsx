@@ -3,7 +3,9 @@ import { formatMoney } from "../../utils/money";
 export function PaymentSummary({ paymentSummary }) {
   return (
     <div className="payment-summary">
-      <div className="payment-summary-title">Payment Summary</div>
+      <div className="payment-summary-title">
+        Payment Summary
+      </div>
 
       {paymentSummary && (
         <>
@@ -22,7 +24,9 @@ export function PaymentSummary({ paymentSummary }) {
           </div>
 
           <div className="payment-summary-row subtotal-row">
-            <div>Total before tax:</div>
+            <div>
+              Total before tax:
+            </div>
             <div className="payment-summary-money">
               {formatMoney(paymentSummary.totalCostBeforeTaxCents)}
             </div>

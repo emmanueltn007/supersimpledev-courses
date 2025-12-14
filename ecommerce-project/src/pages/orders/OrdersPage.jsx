@@ -9,7 +9,8 @@ export function OrdersPage({ cart }) {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("/api/orders?expand=products").then((response) => {
+    axios.get("/api/orders?expand=products")
+    .then((response) => {
       setOrders(response.data);
     });
   }, []);
@@ -39,7 +40,7 @@ export function OrdersPage({ cart }) {
                     </div>
                   </div>
 
-                  <div className="order-header-right-section">``
+                  <div className="order-header-right-section">
                     <div className="order-header-label">Order ID:</div>
                     <div>{order.id}</div>
                   </div>
