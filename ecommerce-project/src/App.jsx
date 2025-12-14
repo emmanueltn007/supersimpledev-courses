@@ -11,7 +11,7 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const loadCart = async () => {
-      const response = await axios.get('/api/cart-items?expand=products') //query parameter lets us add additional info to our request
+      const response = await axios.get('/api/cart-items?expand=product') //query parameter lets us add additional info to our request
       setCart(response.data);
   };
 

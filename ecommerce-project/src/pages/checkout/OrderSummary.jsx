@@ -12,7 +12,7 @@ export function OrderSummary({ cart, deliveryOptions, loadCart }) {
             });
 
             const deleteCartItem = async () => {
-              await axios.delete(`/api/cart-item/${cartItem.productId}`);
+              await axios.delete(`/api/cart-items/${cartItem.productId}`);
               await loadCart();
             };
 
